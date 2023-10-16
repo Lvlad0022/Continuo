@@ -1,0 +1,52 @@
+g++ -c main.cpp -I"C:\Users\lovro\Documents\libraries\SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit\SFML-2.5.1\include" -DSFML_STATIC
+
+g++ main.o -o main -L"C:\Users\lovro\Documents\libraries\SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit\SFML-2.5.1\lib" -lsfml-graphics-s -lsfml-window-s -lsfml-system-s -lopengl32 -lfreetype -lwinmm -lgdi32 -mwindows -lsfml-main
+
+
+
+cini mi se da ce glavna ideja biti napravit grid i odvojeno mjesto gdje ti stoje tvoje kartice 
+s gore dolje lijevo desno tipkama cu staviti pomocu key pressed da se mozes ktetati po gridu i vjv s 
+scroll na misu da zumiras
+
+kako stavit plocice jos moram vidjet hoce li drag and dop radit ako da super ako ne 
+mogu odabrati karticu jednim kilkom i drugim kilkom ju staviti
+
+/////trenutni cilj je napraviti upravo to grid kojim se mogu kretati
+
+keyboard, mouse and joystick ce biti za drag and drop
+mislim da cu prvo se pozabaviti jednostavnijom verzijom pa ako ce biti vremena preci cu na drag drop
+
+
+////shape
+koliko za sad shvacam getpointcount ti daje broj tocaka koje odreduju oblik
+pa ti getpoint za svaki index od nula do getpointcount odredi poziciju te tocke s tim indexom
+i onda se nekako automatski stvori lik kojem su te tocke outline
+/////
+
+///// sto dalje 
+grid cu napraviti samo kao outline linija koje se sjeku 
+(tu ce mi glavni problem biti kako pamtiti veci grid nego sto je window i pomicanje po njemu)
+dalje na stranici ima tilemap to mi upravo treba napravit cu na isti princip plocice koje mi trebaju za conitnuo
+
+//////
+dosta sam napredovao od zadnje biljeske////////////////////////
+
+/////
+sada je sljedeci cilj pokusati ubaciti drugi screen ili kako god vec rjesiti problematiku prikazivanja sljedece plocice
+ i broja bodova
+
+ ///
+ onda ubacivanje plocaice za pocetak ce biti samo pritiskom kasnije mozda implementiram drag drop
+
+/////
+nakon toga rjesiti sve finese bodovanja i  kontrole pozicija plocica
+
+/// 
+onda rjesit greedy algo
+
+
+
+
+
+
+///// jos samo scoreboard i sprjecavanje da view ide van dozvoljenog porucja
